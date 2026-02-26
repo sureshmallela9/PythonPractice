@@ -47,3 +47,24 @@ Python is best described as a **hybrid language**:
 - **Interpreted** by the Python Virtual Machine  
 - Some implementations also **JIT compile** to machine code
 
+---
+
+## 2. How can you concatenate two lists in Python?
+
+There are multiple ways to concatenate two lists in Python:
+
+### Using the `+` Operator
+
+```python
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+
+result = list1 + list2
+```
+
+### Using the extend() 
+
+```python
+
+list1.extend(list2)
+```
