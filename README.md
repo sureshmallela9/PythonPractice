@@ -68,3 +68,57 @@ result = list1 + list2
 
 list1.extend(list2)
 ```
+---
+
+## 3. How can you concatenate two lists in Python?
+
+### ForLoop:
+Used when we know how many times to repeat, often with lists, tuples, sets, or dictionaries.
+```python
+for i in range(5):
+    print(i)
+```
+
+### While Loop:
+Used when we only have an end condition and don’t know exactly how many times it will repeat.
+```python
+c = 0
+while c < 5:
+    print(c)
+    c += 1
+```
+---
+## 4. How do you floor a number in Python?
+
+To floor a number in Python, you can use the math.floor() function, which returns the largest integer less than or equal to the given number.
+### floor():
+method in Python returns the floor of **x** i.e., the largest integer not greater than **x**
+```python
+import math
+
+n = 3.7
+F_num = math.floor(n)
+
+print(F_num)
+
+output: 3
+```
+---
+
+## 5. How do you ceil a number in Python?
+### ceil():
+
+math.ceil() function returns the smallest integer greater than or equal to a given number. It always rounds a value upward to the nearest whole number. If the input is already an integer, the same value is returned.
+
+This example shows how math.ceil() rounds a positive decimal number up to the next integer.
+
+```python
+import math
+
+x = 33.7
+res = math.ceil(x)
+print(res)
+
+output: 34 # if input is 33.1 then output would be same:34
+```
+---
