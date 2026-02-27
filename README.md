@@ -70,7 +70,7 @@ list1.extend(list2)
 ```
 ---
 
-## 3. How can you concatenate two lists in Python?
+## 3.Difference between for loop and while loop in Python?
 
 ### ForLoop:
 Used when we know how many times to repeat, often with lists, tuples, sets, or dictionaries.
@@ -120,5 +120,50 @@ res = math.ceil(x)
 print(res)
 
 output: 34 # if input is 33.1 then output would be same:34
+```
+---
+
+
+## 6. Is Indentation Required in Python?
+
+Yes, **indentation is required in Python**.
+
+### What is Indentation?
+
+Indentation refers to the **spaces or tabs at the beginning of a line of code**.  
+In Python, indentation is used to **define blocks of code** instead of curly braces `{}` (as used in languages like C, C++, or Java).
+
+---
+
+### Why is Indentation Important?
+
+- It tells Python **which statements belong to a block**
+- It improves **code readability**
+- Incorrect indentation causes an **IndentationError**
+
+---
+
+### Example with Correct Indentation
+
+```python
+if True:
+    print("This is indented correctly")
+    print("Python uses indentation")
+```
+---
+
+
+## 6.What is the difference between / and // in Python?
+
+**/** represents precise division (result is a floating point number) whereas **//** represents floor division (result is an integer). For Example:
+
+
+```python
+print(5//2)
+print(5/2)
+
+output: 
+2
+2.5
 ```
 ---
