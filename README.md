@@ -167,3 +167,31 @@ output:
 2.5
 ```
 ---
+## 7. Can we Pass a function as an argument in Python?
+
+Yes, Several arguments can be passed to a function, including objects, variables (of the same or distinct data types) and functions.
+Functions can be passed as parameters to other functions because they are objects.
+Higher-order functions are functions that can take other functions as arguments.
+
+
+```python
+def add_func(a, b):
+    return a + b
+
+def apply_func(func, a, b):
+    return func(a, b)
+
+print(apply_func(add_func, 1, 2))
+```
+---
+## 8. What is a dynamically typed language?
+
+- In a dynamically typed language, the data type of a variable is determined at runtime, not at compile time.
+- No need to declare data types manually; Python automatically detects it based on the assigned value.
+- Examples of dynamically typed languages: Python, JavaScript.
+- Examples of statically typed languages: C, C++, Java.
+- Dynamically typed languages are easier and faster to code.
+- Statically typed languages are usually faster to execute due to type checking at compile time.
+
+
+---
