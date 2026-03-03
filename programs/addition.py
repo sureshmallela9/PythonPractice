@@ -5,3 +5,5 @@ def apply_func(func, a, b):
     return func(a, b)
 
 print(apply_func(add_func, 1, 2))
+
+
