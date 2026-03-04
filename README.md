@@ -193,5 +193,65 @@ print(apply_func(add_func, 1, 2))
 - Dynamically typed languages are easier and faster to code.
 - Statically typed languages are usually faster to execute due to type checking at compile time.
 
-
+```python
+x = 10       # x is an integer
+x = "Hello"  # Now x is a string
+```
+- Here, the type of x changes at runtime based on the assigned value hence it shows dynamic nature of Python.
 ---
+
+## 9. What is pass in Python?
+
+- The pass statement is a placeholder that does nothing.
+- It is used when a statement is syntactically required but no code needs to run.
+- Commonly used when defining empty functions, classes or loops during development.
+```python
+def fun():
+    pass  # Placeholder, no functionality yet
+
+# Call the function
+fun()
+
+# No Output
+# Here, fun() does nothing, but the code stays syntactically correct.
+```
+---
+
+## 10. How are arguments passed by value or by reference in Python?
+
+- Python’s argument-passing model is neither “Pass by Value” nor “Pass by Reference” but it is “Pass by Object Reference”. 
+- Depending on the type of object you pass in the function, the function behaves differently. Immutable objects show “pass by value” whereas mutable objects show “pass by reference”.
+- You can check the difference between pass-by-value and pass-by-reference in the example below:
+### Mutability matters:
+
+- Mutable objects (like lists, dictionaries, sets) can be changed inside the function, and those changes will be visible outside.
+
+- Immutable objects (like integers, strings, tuples) cannot be altered in place. Reassigning them inside the function only changes the local reference, not the original object.
+```python
+def call_by_val(x):
+    x = x * 2
+    return x
+
+
+def call_by_ref(b):
+    b.append("D")
+    return b
+
+
+a = ["E"]
+num = 6
+
+# Call functions
+updated_num = call_by_val(num)
+updated_list = call_by_ref(a)
+
+# Print after function calls
+print("Updated value after call_by_val:", updated_num)
+print("Updated list after call_by_ref:", updated_list)
+
+#output
+#Updated value after call_by_val: 12
+#Updated list after call_by_ref: ['E', 'D']
+```
+---
+
