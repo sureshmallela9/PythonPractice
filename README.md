@@ -255,3 +255,16 @@ print("Updated list after call_by_ref:", updated_list)
 ```
 ---
 
+## 11. What is a lambda function?
+
+- A lambda function is an anonymous function. This function can have any number of parameters but, can have just one statement.
+```python
+s1 = 'testLamda'
+
+s2 = lambda func: func.upper()
+print(s2(s1))
+
+#output : TESTLAMDA
+
+```
+---
