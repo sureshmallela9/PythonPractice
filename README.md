@@ -268,3 +268,41 @@ print(s2(s1))
 
 ```
 ---
+## 12. What are *args and **kwargs?
+
+### *args:
+
+- **Purpose:** Allows a function to accept any number of keyword arguments.
+- **Data type:** Stored as a dictionary.
+
+```python
+def fun(*argv):
+    for arg in argv:
+        print(arg)
+
+fun('Hello', 'Welcome', 'to', 'GeeksforGeeks')
+
+#o/p:
+#Hello
+#Welcome
+#to
+#GeeksforGeeks
+
+```
+
+### *kwargs: 
+
+- **Purpose:** Allows a function to accept any number of keyword arguments.
+- **Data type:** Stored as a dictionary.
+```python
+def print_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+print_info(name="Suresh", age=25, city="Hyderabad")
+
+
+#o/p: - Here, kwargs becomes {'name': 'Suresh', 'age': 25, 'city': 'Hyderabad'}.
+
+```
+---
