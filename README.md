@@ -306,3 +306,33 @@ print_info(name="Suresh", age=25, city="Hyderabad")
 
 ```
 ---
+
+## 13. What is List Comprehension? Give an Example.
+
+- List comprehension is a way to create lists using a concise syntax. It allows us to generate a new list by applying an expression to each item in an existing iterable (such as a list or range).
+
+### Example: 
+
+if we have a list of integers and want to create a new list containing the square of each element, we can easily achieve this using list comprehension.
+
+```python
+a = [2,3,4,5]
+list_new = [val ** 2 for val in a]
+print(list_new)
+
+#o/p: [4, 9, 16, 25]
+
+```
+---
+
+## 14. What is a break, continue and pass in Python? 
+
+### Break:
+Break statementis used to terminate the loop or statement in which it is present. After that, the control will pass to the statements that are present after the break statement, if available.
+
+### Continue: 
+Continue is also a loop control statement just like the break statement. continue statement is opposite to that of the break statement, instead of terminating the loop, it forces to execute the next iteration of the loop.
+### Pass:
+Pass means performing no operation or in other words, it is a placeholder in the compound statement, where there should be a blank left and nothing has to be written there.
+
+---
