@@ -336,3 +336,38 @@ Continue is also a loop control statement just like the break statement. continu
 Pass means performing no operation or in other words, it is a placeholder in the compound statement, where there should be a blank left and nothing has to be written there.
 
 ---
+
+## 15. What is the difference between a Set and Dictionary?
+
+### Set:
+- A Python Set is an unordered collection data type that is iterable, mutable and has no duplicate elements. Python’s set class represents the mathematical notion of a set.
+- Syntax: Defined using curly braces {} or the set() function.
+
+
+```python
+my_set = {1, 2, 3}
+```
+
+### Dictionary:
+- Dictionary in Python is an ordered (since Py 3.7) [unordered (Py 3.6 & prior)] collection of data values
+- used to store data values like a map, which, unlike other Data Types that hold only a single value as an element, Dictionary holds key:value pair.
+- Key-value is provided in the dictionary to make it more optimized.
+- Defined using curly braces {} with key-value pairs.
+```python
+my_dict = {"a": 1, "b": 2, "c": 3}
+```
+---
+
+## 16. What are Built-in data types in Python?
+
+- ***Numeric:*** The numeric data type in Python represents the data that has a numeric value. A numeric value can be an integer, a floating number, a Boolean, or even a complex number.
+- ***Sequence Type:*** The sequence Data Type in Python is the ordered collection of similar or different data types. There are several sequence types in Python:
+    - Python String
+    - Python List
+    - Python Tuple
+    - Python range
+- ***Mapping Types:*** In Python, hashable data can be mapped to random objects using a mapping object. There is currently only one common mapping type, the dictionary and mapping objects are mutable.
+  - Python Dictionary
+- **Set Types:** In Python, a Set is an unordered collection of data types that is iterable, mutable and has no duplicate elements. The order of elements in a set is undefined though it may consist of various elements.
+---
+
