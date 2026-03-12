@@ -371,3 +371,70 @@ my_dict = {"a": 1, "b": 2, "c": 3}
 - **Set Types:** In Python, a Set is an unordered collection of data types that is iterable, mutable and has no duplicate elements. The order of elements in a set is undefined though it may consist of various elements.
 ---
 
+## 17. What is the difference between a Mutable datatype and an Immutable data type?
+
+- Mutable data types can be edited i.e., they can change at runtime. Eg – List, Dictionary, etc.
+- Immutable data types can not be edited i.e., they can not change at runtime. Eg – String, Tuple, etc.
+
+```python
+
+s = "hello"
+s[0] = "H"   # ❌ Error: 'str' object does not support item assignment
+
+s = "H" + s[1:]   # ✅ Creates a new string "Hello"
+
+
+t = (1, 2, 3)
+t[0] = 10   # ❌ Error: 'tuple' object does not support item assignment
+
+t = (10,) + t[1:]   # ✅ New tuple (10, 2, 3)
+```
+---
+
+## 18. What is a Variable Scope in Python?
+
+"The location where we can find a variable and also access it" is nothing but  scope of a variable.
+
+### Python Local variable:
+- Local variables are those that are initialized within a function and are unique to that function. A local variable cannot be accessed outside of the function.
+```python
+  def my_function():
+      x = 10   # local variable
+      print("Inside function:", x)
+  
+  my_function()
+  print(x)   # ❌ Error: NameError (x not defined outside)
+```
+### Python Global variables:
+- Global variables are the ones that are defined and declared outside any function and are not specified to any function.
+```python
+y = 20   # global variable
+
+def my_function():
+    print("Inside function:", y)  # can access global
+
+my_function()
+print("Outside function:", y)     # also accessible here
+```
+### Module-level scope:
+- It refers to the global objects of the current module accessible in the program.
+```python
+# file: mymodule.py
+z = 30   # module-level variable
+
+def show():
+    print("Module-level variable:", z)
+
+# If you import this module elsewhere:
+# import mymodule
+# print(mymodule.z)   # accessible
+```
+### Outermost scope:
+- It refers to any built-in names that the program can call. The name referenced is located last among the objects in this scope.
+```python
+# These are names built into Python itself — always available without import.
+# Example of built-in scope
+print(len([1, 2, 3]))   # len is a built-in function
+print(sum([1, 2, 3]))   # sum is also built-in
+```
+---
