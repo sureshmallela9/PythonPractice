@@ -438,3 +438,10 @@ print(len([1, 2, 3]))   # len is a built-in function
 print(sum([1, 2, 3]))   # sum is also built-in
 ```
 ---
+## 19. How is a dictionary different from a list?
+
+- A list is an ordered collection of items accessed by their index, While a dictionary is an unordered collection of key-value pairs accessed using unique keys.
+- Lists are ideal for sequential data, whereas dictionaries are better for associative data. For example, a list can store [10, 20, 30], whereas a dictionary can store {"a": 10, "b": 20, "c": 30}.
+---
+
+##
