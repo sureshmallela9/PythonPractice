@@ -444,4 +444,24 @@ print(sum([1, 2, 3]))   # sum is also built-in
 - Lists are ideal for sequential data, whereas dictionaries are better for associative data. For example, a list can store [10, 20, 30], whereas a dictionary can store {"a": 10, "b": 20, "c": 30}.
 ---
 
-##
+## 20. What is docstring in Python?
+
+Python documentation strings (or docstrings) provide a convenient way of associating documentation with Python modules, functions, classes and methods.
+
+***Declaring Docstrings:*** The docstrings are declared using ”’triple single quotes”’ or “””triple double quotes””” just below the class, method, or function declaration. All functions should have a docstring.
+
+***Accessing Docstrings:*** The docstrings can be accessed using the `__doc__` method of the object or using the help function.
+
+```python
+def add_numbers(a, b):
+    """
+    This function takes two numbers as input
+    and returns their sum.
+    """
+    return a + b
+
+# Accessing the docstring
+print(add_numbers.__doc__)
+# o/p: This function takes two numbers as input and returns their sum.
+```
+---
