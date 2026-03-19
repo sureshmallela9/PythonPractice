@@ -465,3 +465,20 @@ print(add_numbers.__doc__)
 # o/p: This function takes two numbers as input and returns their sum.
 ```
 ---
+
+## 21. How is Exceptional handling done in Python?
+
+There are 3 main keywords i.e. try, except and finally which are used to catch exceptions:
+
+- **try:** A block of code that is monitored for errors.
+- **except:** Executes when an error occurs in the try block.
+- **finally:** Executes after the try and except blocks, regardless of whether an error occurred. It’s used for cleanup tasks.
+- Trying to divide a number by zero will cause an exception.
+```python
+n = 10
+try:
+    res = n / 0  # This will raise a ZeroDivisionError
+    
+except ZeroDivisionError:
+    print("Can't be divided by zero!")
+```
