@@ -482,3 +482,20 @@ try:
 except ZeroDivisionError:
     print("Can't be divided by zero!")
 ```
+---
+## 22. What is the difference between Python Arrays and Lists?
+### Arrays:
+- Arrays are specifically used to store a collection of numeric elements that are all of the same type. This makes them more efficient for storing large amounts of data and performing numerical computations where the type consistency is maintained.
+- Need to import the array module to use arrays.
+```python
+from array import array
+arr = array('i', [1, 2, 3, 4])  # Array of integers
+```
+
+### List:
+- Lists are more flexible than arrays in that they can hold elements of different types (integers, strings, objects, etc.). They come built-in with Python and do not require importing any additional modules.
+- Lists support a variety of operations that can modify the list
+```python
+a = [1, 'hello', 3.14, [1, 2, 3]]
+```
+---
