@@ -510,3 +510,35 @@ print(math.sqrt(16))
 - package is a collection of related modules stored in a directory. It helps in organizing and grouping modules together for easier management. For example: The numpy package contains multiple modules for numerical operations.
 
 - To create a package, the directory must contain a special file named __init__.py.
+
+---
+
+## 24. What is the difference between xrange and range functions?
+
+- range() and xrange() are two functions that could be used to iterate a certain number of times in for loops in Python.
+- In Python 3, there is no xrange, but the range function behaves like xrange.
+### Range: 
+-Returns a list of numbers and Uses more memory for large ranges.
+```python
+nums = range(5)
+print(nums)
+# [0, 1, 2, 3, 4]
+```
+### XRange: 
+- Returns an iterator-like object (lazy sequence).
+- Generates numbers one at a time.
+- Much more memory efficient.
+```python
+When a loop asks for the next value
+```
+### In Python 3: 
+
+- xrange() was removed.
+- range() in Python 3 behaves like Python 2's xrange():
+```python
+lazy
+memory efficient
+iterable
+fast
+```
+---
